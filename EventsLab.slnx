@@ -1,8 +1,8 @@
 <Solution>
+  <Project Path="Monitor/Monitor.csproj" />
+  <Project Path="ThreadsApp/ThreadsApp.csproj" />
   <Project Path="DeviceControl/DeviceControl.csproj" />
   <Project Path="MeasuringDevice/MeasuringDevice.csproj" />
-  <Project Path="Monitor/Monitor.csproj" />
   <Project Path="ThreadLab.Core/ThreadLab.Core.csproj" />
-  <Project Path="ThreadsApp/ThreadsApp.csproj" />
   <Project Path="LabTests/LabTests.csproj" />
 </Solution>
