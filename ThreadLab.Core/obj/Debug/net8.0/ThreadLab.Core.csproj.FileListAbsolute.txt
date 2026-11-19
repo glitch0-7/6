@@ -1,0 +1,11 @@
+C:\Users\tamir\OneDrive\Документы\Проект по умолчанию\ООП\ЛР6 - События и многопоточность\ThreadLab.Core\bin\Debug\net8.0\ThreadLab.Core.deps.json
+C:\Users\tamir\OneDrive\Документы\Проект по умолчанию\ООП\ЛР6 - События и многопоточность\ThreadLab.Core\bin\Debug\net8.0\ThreadLab.Core.dll
+C:\Users\tamir\OneDrive\Документы\Проект по умолчанию\ООП\ЛР6 - События и многопоточность\ThreadLab.Core\bin\Debug\net8.0\ThreadLab.Core.pdb
+C:\Users\tamir\OneDrive\Документы\Проект по умолчанию\ООП\ЛР6 - События и многопоточность\ThreadLab.Core\obj\Debug\net8.0\ThreadLab.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tamir\OneDrive\Документы\Проект по умолчанию\ООП\ЛР6 - События и многопоточность\ThreadLab.Core\obj\Debug\net8.0\ThreadLab.Core.AssemblyInfoInputs.cache
+C:\Users\tamir\OneDrive\Документы\Проект по умолчанию\ООП\ЛР6 - События и многопоточность\ThreadLab.Core\obj\Debug\net8.0\ThreadLab.Core.AssemblyInfo.cs
+C:\Users\tamir\OneDrive\Документы\Проект по умолчанию\ООП\ЛР6 - События и многопоточность\ThreadLab.Core\obj\Debug\net8.0\ThreadLab.Core.csproj.CoreCompileInputs.cache
+C:\Users\tamir\OneDrive\Документы\Проект по умолчанию\ООП\ЛР6 - События и многопоточность\ThreadLab.Core\obj\Debug\net8.0\ThreadLab.Core.dll
+C:\Users\tamir\OneDrive\Документы\Проект по умолчанию\ООП\ЛР6 - События и многопоточность\ThreadLab.Core\obj\Debug\net8.0\refint\ThreadLab.Core.dll
+C:\Users\tamir\OneDrive\Документы\Проект по умолчанию\ООП\ЛР6 - События и многопоточность\ThreadLab.Core\obj\Debug\net8.0\ThreadLab.Core.pdb
+C:\Users\tamir\OneDrive\Документы\Проект по умолчанию\ООП\ЛР6 - События и многопоточность\ThreadLab.Core\obj\Debug\net8.0\ref\ThreadLab.Core.dll

@@ -1,0 +1,73 @@
+<Window x:Class="Monitor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Монитор измерений (MeasureMassDevice)"
+        Width="560" Height="500"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="CanMinimize">
+    <Grid Margin="12">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <!-- Показания последнего измерения: метка и три текстовых поля -->
+        <GroupBox Grid.Row="0" Header="Показания устройства" Padding="8">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="170" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="28" />
+                    <RowDefinition Height="28" />
+                    <RowDefinition Height="28" />
+                </Grid.RowDefinitions>
+
+                <Label Grid.Row="0" Grid.Column="0" Content="Most recent measure:" />
+                <TextBox Grid.Row="0" Grid.Column="1" x:Name="mostRecentMeasureBox"
+                         IsReadOnly="True" VerticalContentAlignment="Center" />
+
+                <Label Grid.Row="1" Grid.Column="0" Content="Metric value:" />
+                <TextBox Grid.Row="1" Grid.Column="1" x:Name="metricValueBox"
+                         IsReadOnly="True" VerticalContentAlignment="Center" />
+
+                <Label Grid.Row="2" Grid.Column="0" Content="Imperial value:" />
+                <TextBox Grid.Row="2" Grid.Column="1" x:Name="imperialValueBox"
+                         IsReadOnly="True" VerticalContentAlignment="Center" />
+            </Grid>
+        </GroupBox>
+
+        <!-- Метка «сердцебиения»: обновляется лямбда-выражением -->
+        <Label Grid.Row="1" x:Name="heartBeatTimeStamp"
+               Content="HeartBeat Timestamp: —" FontWeight="Bold" />
+
+        <!-- Необработанные данные: кольцевой буфер устройства -->
+        <GroupBox Grid.Row="2" Header="Raw Data (необработанные данные)" Padding="4">
+            <ListBox x:Name="rawDataValues" />
+        </GroupBox>
+
+        <!-- Кнопки управления устройством -->
+        <Grid Grid.Row="3" Margin="0,10,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" x:Name="startCollecting" Content="Start Collecting"
+                    Height="32" Margin="0,0,6,0" Click="startCollecting_Click" />
+            <Button Grid.Column="1" x:Name="stopCollecting" Content="Stop Collecting"
+                    Height="32" Margin="3,0" Click="stopCollecting_Click" />
+            <Button Grid.Column="2" x:Name="disposeObject" Content="Dispose Object"
+                    Height="32" Margin="6,0,0,0" Click="disposeObject_Click" />
+        </Grid>
+
+        <!-- Пояснение по методичке: обновление окна происходит по событию -->
+        <TextBlock Grid.Row="4" Margin="0,8,0,0" TextWrapping="Wrap"
+                   Foreground="Gray" FontSize="11"
+                   Text="Кнопка Start Collecting создает MeasureMassDevice (Metric, интервал пульса 1000 мс) и подписывает обработчики NewMeasurementTaken и HeartBeat; Stop Collecting отключает обработчик события; Dispose Object освобождает фоновый поток «пульса»." />
+    </Grid>
+</Window>

@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "MeasuringDevice/1.0.0": {
+        "dependencies": {
+          "DeviceControl": "1.0.0"
+        },
+        "runtime": {
+          "MeasuringDevice.dll": {}
+        }
+      },
+      "DeviceControl/1.0.0": {
+        "runtime": {
+          "DeviceControl.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MeasuringDevice/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DeviceControl/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

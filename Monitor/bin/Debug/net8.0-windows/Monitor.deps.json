@@ -1,0 +1,56 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Monitor/1.0.0": {
+        "dependencies": {
+          "DeviceControl": "1.0.0",
+          "MeasuringDevice": "1.0.0"
+        },
+        "runtime": {
+          "Monitor.dll": {}
+        }
+      },
+      "DeviceControl/1.0.0": {
+        "runtime": {
+          "DeviceControl.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "MeasuringDevice/1.0.0": {
+        "dependencies": {
+          "DeviceControl": "1.0.0"
+        },
+        "runtime": {
+          "MeasuringDevice.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Monitor/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DeviceControl/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MeasuringDevice/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
